@@ -1,0 +1,16 @@
+synchronous mean?
+-> together, one after the other, sequential
+-> only one thing happening at a time
+
+asynchronous mean?
+-> opposite to synchronous
+-> happens in part
+-> multiple things are context switching with each other
+
+common async functions in js?
+-> setTimeout
+-> fs.readFile - to read a file from your filesystem
+-> fetch - to fetch some data from an API endpoint
+
+what is a promise?
+-> a class that makes callbacks and async functions slightly more readable

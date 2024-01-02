@@ -1,0 +1,47 @@
+ECMAScript:
+-> ECMAScript is a scripting language specification on which JavaScript is based.
+-> It serves as the guideline or the rules for scripting language design.
+
+JavaScript:
+-> JavaScript is the scripting language that conforms the ECMAScript specification.
+-> It's the most widely used implementation of ECMAScript.
+-> JavaScript includes additional features that are not the part of ECMAScript specification, like 
+   Document Object Model (DOM) manipulation which is essential for web development.
+
+What is NodeJS?
+-> NodeJS is a runtime which means that something that can run/compile JavaScript.
+-> Some smart people took the V8(chromium) engine and added some backend functionality(filesystem 
+   read) on top to create a new runtime to compete with BE language like Java.
+
+What is BUN?
+-> Bun is a competitor to NodeJS. Does the same thing but faster and better.
+-> Written on language called zig.
+-> Popular among devs. building low latency systems.
+
+What can you do with NodeJS?
+-> Create clis
+-> Create a video player
+-> Create a game
+-> Create a HTTP Server (most widely used usecase)
+
+What is HTTP Server?
+-> A protocol that is defined for machines to communicate.
+-> Most common way for the website's frontend to communicate to its backend(servers).
+
+When HTTP client is making a request? (things client need to worry about)
+-> Protocol(HTTP/HTTPS)
+-> Address(URL/IP/PORTS)
+-> Route (chat.openai.com/backend-api/conversations) - how the route is defined
+-> Header, Body, Query Params
+-> Method (POST, GET, PUT, DELETE)
+
+Things server needs to worry about:
+-> Response headers
+-> Response body
+-> Status codes
+
+Status codes:
+200 - Ok
+404 - Page/route not found
+403 - authentication issues
+500 - internal server error

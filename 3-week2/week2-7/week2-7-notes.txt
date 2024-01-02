@@ -1,0 +1,10 @@
+What is version control system?
+-> a system that keeps track of files or projects.
+-> allows to revert selected files to previous state, revert entire project to previous state
+-> allows to compare changes made over time
+-> check who made changes, check for issues, when was it made?
+
+two types of version control system
+-> centralized - central server
+-> distributed
+

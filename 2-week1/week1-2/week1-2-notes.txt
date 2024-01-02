@@ -1,0 +1,43 @@
+Why languages?
+-> languages are used to write applications.
+-> developers write high level code/languages for a particular usecase
+-> every language has it's specific compiler which converts the developer written into 0 and 1,
+   later the machine executes that code into the functioning
+
+What are compilers?
+-> compilers do the heavy lifting of converting the code written by the developer, into 0's and 1's
+
+ Compiled Languages:
+ -> first need to compile, then need to run
+ -> usually does not compile if there is an error in the code
+ -> c++, java, rust, golang
+
+ Interpreted language:
+ -> usually go line by line
+ -> can run partially if the error comes later
+ -> javascript, python
+
+ Javascript is a single threaded language.
+ -> only one command at a time gets executed
+ -> for example; i have 10 cores on my laptop and one core can run only one process at a single time
+ so if I am running two processes then both will be waiting for their turn. but a question arises here,
+ if I have only 10 cores it would mean that only 10 processes can run at the same time. but that is 
+ not true, because of something called as "context switching", which essentially means that not all
+ processes requires the CPU at all times. so it's like an alternate cycle that is running.
+ -> a javascript code will execute one line after another, it would never split into two different core.
+ -> single threaded means javascript will use only one core at a time.
+
+ Three ways to describe variables in javascript:
+ -> let, var, const
+
+ Data Types:
+ -> strings, array, boolean
+
+ Functions let you do what?
+ -> abstract out logic in your program
+ -> take arguments as an input
+ -> return a value as an output
+ -> you can think of them as an independent program that is supposed to do something when given an input
+ -> funtions can take other functions as input - callbacks
+
+ Callbacks:

@@ -1,0 +1,22 @@
+bash commands:
+
+pwd - print working directory
+cd - get into a folder 
+ls - list of files or folders inside a folder 
+mkdir - make a new folder 
+touch - make a new file
+cat - display the contents inside a file 
+vi - let's you edit files
+    eg. vi a.txt
+    i - insert mode (press to start typing)
+    :wq! - write and quit (press to save changes then press q to quit without saving)
+    rm - delete a file/folder
+    cp - copy a file from one place to another
+    mv - move / rename a file/folder
+mv - move a file or folder
+cp - copy to a file or folder
+nvm -  It allows you to easily switch between different versions of Node.js, install 
+       new versions, and manage npm packages associated with each Node.js version. 
+npm -  Node Package Manager, and it is the default package manager for Node.js. It
+       is used for managing and installing Node.js packages
+node - execute javascript code with nodeJS in runtime
