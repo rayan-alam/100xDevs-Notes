@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>ToDo List</title>
+    </head>
+    <body>
+        <script>
+            function addTodo(){
+                const title = document.getElementById("todo-input").value;
+                const description = document.getElementById("desc-input").value;
+
+                const outerDiv = document.createElement("div");
+                outerDiv.innerHTML = title;
+                document.getElementById("container").appendChild(outerDiv);
+                
+                // const originalHTML = document.getElementById("container").innerHTML;
+                // document.getElementById("container").innerHTML = originalHTML + 
+                // `
+                // <div>
+                //     <div>${title}</div>
+                //     <div>${description}</div>
+                //     <button>Mark as done</button>
+                // </div>
+                // `
+            }
+        </script>
+        <input type="text" placeholder="Enter ToDo" id="todo-input"> <br> <br>
+        <input type="text" placeholder="ToDo Description" id="desc-input"> <br> <br>
+        <button onclick="addTodo()">Add ToDo</button> <br> <br>
+        <div id="container">
+            <div>Title of ToDo 1</div>
+            <div>Desc of ToDo 1</div>
+            <button>Mark as done</button>
+        </div>
+    </body>
+</html>
