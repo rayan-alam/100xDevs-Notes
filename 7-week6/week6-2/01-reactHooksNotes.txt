@@ -1,0 +1,41 @@
+Side Effects:
+-whenever a functional component is not being used to render anything, i.e putting things
+on the DOM or taking things out of the DOM.
+-overall like a fetch that is happening, or setTimeout or setInterval.
+-these are part of main react lifecycle features.
+
+React Hooks:
+-hooks are created form react 16.8 onwards.
+-this helps us use the state and other react features without writing a class.
+-previously a dev had to write a class to access react features.
+
+1.useState - describe the state of an application, whenever a state updates it triggers a 
+             re-render which finally results in DOM.
+
+2.useEffect - allows to use side effects in functional component.
+            -   useEffect(() => {
+                    setInterval(() => {
+                        fetch("https://sum-server.100xdevs.com/todos")
+                            .then(async function(res){
+                            const json = await res.json();
+                            setTodos(json.todos);
+                        })
+                    }, 10000);
+                }, []);
+            - roughly this is the syntax we're operate with, and the dependency array at 
+            last defines the condition at which the useEffect hook should be called/used,
+            when the array is empty it means that it will only be called at the start.
+            - dependency array says when the code inside should run i.e conditions
+            - dependency array takes state variables as input
+
+3.useMemo - memoization-means remembering some output given an input and not computing it 
+            again
+
+4.useCallback - used to memoize functions, which can be used to optimize the performance
+                of our application, especially with cases involving child component that
+                rely on reference equality to prevent unnecessary re-renders.
+              - referential equality: if two variables for example a and b, are equal by
+                reference. which means if their memory locations are the same? a and b might
+                be equal in terms of value, but in terms of memory reference, they're 
+                unequal.
+                
